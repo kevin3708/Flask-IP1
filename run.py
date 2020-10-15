@@ -33,7 +33,7 @@ def main():
     print('\n')
 
     while True:
-        print("use these short codes: cu - create a new username, du - delete a username, cc - create new credentials, dc - display credentials,du - delete an account,lg - log into your account, ex -  exit the password locker")
+        print("use these short codes: cu - create a new username, cc - create new credentials, dc - display credentials,du - delete an account,lg - log into your account, ex -  exit the password locker")
         short_code = input().lower()
 
         if short_code == 'cu':
