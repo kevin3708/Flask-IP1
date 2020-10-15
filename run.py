@@ -3,25 +3,49 @@ def create_user(username,password):
     new_user = User(username,password)
     return new_user
 def save_user(user):
+    '''
+    this method add users to the user_list
+    '''
     user.save_user()
 def delete_user(user):
+    '''
+    this method removes users form the user_list
+    '''
     user.delete_user()
 
 def create_credentials(account,username,password):
     new_credentials = Credentials(account,username,password)
     return new_credentials
 def save_credentials(credentials):
+    '''
+    this method will add credentials to the credentials_list
+    '''
     credentials.save_credentials()
 def delete_credentials(credentials):
+    '''
+    this method will remove credentials form the credentials_list
+    '''
     credentials.delete_credentials()
 def display_credentials():
+    '''
+    this method displays all the credentials save in the account
+    '''
     return Credentials.display_credentials()
 def find_account(account):
+    '''
+    this method searches for a specific account as specified by the user
+    '''
     return Credentials.find_account(account)
 def check_user(username,password):
+    '''
+    this method checks if a specified user exists in the application
+    '''
     checked = User.user_exists(username,password)
     return checked
 def get_random_password():
+    '''
+    this method randomly generates passwords for the users
+    '''
     p_word = Credentials.get_random_password()
     return p_word
 
